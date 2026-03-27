@@ -1,6 +1,5 @@
 FROM minio/minio:latest
-CMD ["server", "/data", "--console-address", ":${PORT}"]
-
+CMD ["sh", "-c", "server /data --console-address :$PORT"]
 # ARG TARGETARCH
 # ARG RELEASE
 
